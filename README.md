@@ -57,3 +57,34 @@ Cipress
 
 Base de datos
 Aún por especificar. Puede ser una base de datos con api integrada como firebase o sacaré la info de una API
+
+---
+
+# Problemas enfrentados durante la práctica.
+
+@ Primer uso de cypress para hacer test, en este caso no unitarios, cypress te proporciona todo un entorno para testing tanto de front como de back, no estoy acostumbrado a realizar este tipo de tests, pero debo admitir que me parece impresionante.
+
+Algunos problemas en la instalación.
+Tras instalar el paquete con npm me lanzó un error de que faltaban dependencias.
+correccíon:
+npx cypress install --force
+
+Configuración:
+Hay que configurar algunas cosas para empezar a usar cypress por primera vez.
+
+en package.json al script de test lo vamos a llamar:
+"test": "cypress open",
+
+En el fichero que se crea de cypress.json vamos a escribir la ruta para los test en local del front:
+{
+"baseUrl": "http://localhost:3000/"
+}
+Después de registrarnos en la web de cypress ya podemos correr el entorno de testing con:
+npm run test
+básicamente solo le hemos cambiado el valor para saber que estamos usando cypress pero esto no causa ningún cambio real.
+
+En el directorio root de cypress, buscamos integración y allí vamos a crear los ficheros para nuestros test, ejemplo:
+homepage.js
+El resto se puede encontrar en la documentación.
+Como detalle, lo ideal sería hacer un test completo por cada view y además por cada flujo posible puesto que la mayoría de estos van ha hacer uso de varios views para ellos.
+Aún no tengo back ni database para probar el 100% del potencial de cypress, pero iré actualizando.
