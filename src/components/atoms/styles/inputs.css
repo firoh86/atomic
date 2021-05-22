@@ -1,0 +1,20 @@
+.input {
+  box-sizing: border-box;
+  margin-top: 4px;
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
+  width: 100%;
+  padding: 8px 1rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  color: #999;
+  border: 1px solid #ccc;
+}
+.input:focus {
+  border: 1px solid #ff9340;
+  outline: none;
+}
+.input__textarea {
+  height: 4rem;
+  resize: none;
+}

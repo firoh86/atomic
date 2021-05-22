@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./components/atoms/styles/buttons.css";
+import "./components/atoms/styles/inputs.css";
+import "./components/atoms/styles/labels.css";
+import "./components/atoms/styles/titles.css";
+import Atoms from "./components/atoms/Atoms";
 function App() {
+  const [Buttons, Inputs, Labels, Titles] = Atoms();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className={Titles.titleF}>services</h1>
+      <p className={Titles.subtitleF}>Lista de servicios</p>
+      <input type="text" className={Inputs.inputP} />
+      <label className={Labels.labelD}>Required</label>
+      <textarea className={Inputs.inputTA} />
+      <label className={Labels.labelD}>Required</label>
+      <select className={Inputs.inputSl} placeholder="choice one">
+        <option value="value1">Value 1</option>
+        <option value="value2">Value 2</option>
+        <option value="value3">Value 3</option>
+      </select>
+      <label className={Labels.labelD}>Required</label>
     </div>
   );
 }

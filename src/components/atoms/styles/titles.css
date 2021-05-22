@@ -1,0 +1,17 @@
+.tittle {
+  margin-left: 4px;
+  text-align: left;
+  text-transform: capitalize;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+.form__subtitle {
+  color: rgb(104, 104, 104);
+}
