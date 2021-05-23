@@ -1,26 +1,31 @@
 .button {
   font-size: 1rem;
   font-family: Roboto, Helvetica, sans-serif;
-  width: 100%;
   padding: 10px 1rem;
   border-radius: 4px;
   border: none;
   text-transform: uppercase;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 .button_primary {
   background-color: #ff6600;
+  border: 1px solid transparent;
   color: white;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 .button_primary:hover {
-  background-color: lightgrey;
-  color: gray;
-  border: 1px solid darkgray;
+  background-color: #ff8534;
+  color: #fff7d2;
+  border: 1px solid #fff7d2;
 }
 .button_secondary {
   color: #ff7307;
   border: 1px solid #ff7307;
   background: transparent;
+}
+.button_secondary:hover {
+  background-color: lightgrey;
+  color: gray;
+  border: 1px solid #fff7d2;
 }
 .button_disabled {
   color: #ccc;

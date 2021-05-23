@@ -1,8 +1,8 @@
 const Atoms = () => {
   const Buttons = {
     buttonD: "button ",
-    buttonP: "button button__primary",
-    buttonS: "button button__secondary",
+    buttonP: "button button_primary",
+    buttonS: "button button_secondary",
     buttonDs: "button button__disabled",
   };
   const Inputs = {
